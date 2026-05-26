@@ -14,3 +14,18 @@ Using historical **NHL data** from the season **2008/2009** to the season **2024
 - regression on game results and goals scored
 
 ## Repository Structure
+
+```
+├── data_preparation/
+│   ├── scraping/
+│   │   ├── __init__.py
+│   │   ├── scraping_all_teams.py       # NHL match level data scraper
+│   │   ├── scraping_logos.py           # Team logo scraper (visualizations)
+│   ├── Data_cleaning.py                  # Full data scraping & cleaning pipeline
+├── Final_report.ipynb                    # Main notebook (run this)
+├── README.md
+└── requirements.txt
+```
+
+## Data Sources & Features
+
