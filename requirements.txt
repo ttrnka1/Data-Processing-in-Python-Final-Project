@@ -6,5 +6,3 @@ requests
 matplotlib.pyplot
 seaborn
 cairosvg
-
-
