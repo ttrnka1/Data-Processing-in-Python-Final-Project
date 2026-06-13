@@ -17,12 +17,11 @@ Using historical **NHL data** from the season **2008/2009** to the season **2024
 
 ```
 ├── data_preparation/
-│   ├── scraping/
-│   │   ├── __pycache__.py
-│   │   ├── scraping_all_teams.py       # NHL match level data scraper
-│   │   ├── scraping_logos.py           # Team logo scraper (visualizations)
-│   ├── Data_cleaning.py                  # Full data scraping & cleaning pipeline
-├── Final_report.ipynb                    # Main notebook (run this)
+│   ├── __pycache__.py
+│   ├── logos                                # File with all logos used in charts and app
+│   ├── data_preparation.py                  # Full data scraping & cleaning pipeline
+├── app.py                                   # Interactive application with various statistics and comparisons
+├── Final_analysis.ipynb                     # Main notebook (run this)
 ├── README.md
 └── requirements.txt
 ```
