@@ -28,24 +28,23 @@ Using historical **NHL data** from the season **2008/2009** to the season **2024
 
 ## Data Sources & Features
 
-The project automatically scrapes and processes:
-
-- **NHL match level data (2008–2025):** with all variables
-- **Logos of all teams**
+The project automatically scrapes and processes **NHL match level data (2008–2025):** with all variables.
+Further, it contains a folder of **Logos of all teams**.
 
 Key engineered features include:
 
 - preparation of the final variables 
 - a visualised impact of the key variables on match results
 - comparison of the impact within different situations
+- an app for interactive visualizations of the impacts
 
 ## How to Run the Project
 
-**Important:** Users should only execute code inside **`Final_report.ipynb`**.
+**Important:** Users should only execute code inside **`Final_report.ipynb`** and **`Final_report.ipynb`**.
 
 **Python Version:** This project was developed and tested using **Python 3.9.6.** Using a significantly older or newer version may lead to dependency conflicts.
 
-All scraping, cleaning, modeling, and visualization steps are **orchestrated from the notebook**.
+All scraping, cleaning, modeling, and visualization steps are **orchestrated from the notebook and the app**.
 The Python modules in `data_preparation/` are imported internally and are **not intended to be run directly**.
 
 ### Steps
@@ -57,7 +56,7 @@ The Python modules in `data_preparation/` are imported internally and are **not 
 pip install -r requirements.txt
 ```
 
-3. Open and run **`Final_report.ipynb`** from top to bottom  
+3. Open and run **`Final_analysis.ipynb`** from top to bottom and the **`app.py`**
 
 No additional scripts need to be executed manually.
 
@@ -67,7 +66,7 @@ The data pipeline is implemented across the modules in `data_preparation/` and i
 from the notebook:
 
 1. Scrape raw data from multiple online sources  
-2. Clean and normalize team and logos data  
+2. Clean and normalize team data  
 3. Correct known historical inconsistencies (e.g. number of teams)  
 4. Merge datasets into a unified analytical table  
 5. Compute and visualize the impact 
@@ -79,9 +78,8 @@ Key libraries used in this project include:
 - pandas, numpy  
 - matplotlib, seaborn  
 - scikit-learn, scipy  
-- requests, beautifulsoup4, lxml  
-- Pillow
-- Jinja2
+- requests, beautifulsoup4
+- cairosvg
 
 ## Notes
 
